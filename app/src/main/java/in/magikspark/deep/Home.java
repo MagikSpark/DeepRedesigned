@@ -42,7 +42,7 @@ public class Home extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(Home.this, "New Client Successfully Added", Toast.LENGTH_LONG).show();
+                Toast.makeText(Home.this, "Enter Details of Client", Toast.LENGTH_LONG).show();
 
                 Intent intent = new Intent(Home.this, AddClient.class);
                 Home.this.startActivity(intent);
