@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Deep</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="power">Powered By MagikSpark.in</string>
+    <string name="company">Deep</string>
+
+    <string name="deep_cable_network">Deep Cable Network</string>
+    <string name="deep_water">Deep Water Supply</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_client">Add Client</string>
+</resources>

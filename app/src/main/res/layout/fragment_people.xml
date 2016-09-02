@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.magikspark.deep.People">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/ref001"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardElevation="4dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#001"
+                    android:textSize="10sp"
+                    android:paddingTop="14dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Priyanka Patel"
+                    android:textSize="24sp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vaikunth Society"
+                    android:textSize="14sp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Paid"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:id="@+id/ref002"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:cardElevation="4dp" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#002"
+                        android:textSize="10sp"
+                        android:paddingTop="14dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mukund Gohil"
+                        android:textSize="24sp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SuryaNarayan Society"
+                        android:textSize="14sp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:text="Unpaid"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
