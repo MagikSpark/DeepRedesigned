@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,89 +11,110 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.magikspark.deep.LoginActivity">
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome To"
-        android:textAlignment="center"
-        android:textStyle="bold|italic"
-        android:textSize="25sp"
-        android:layout_alignParentTop="true"
-        android:id="@+id/welcome"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Deep Enterprise"
-        android:textAlignment="center"
-        android:textStyle="bold|italic"
-        android:textSize="40sp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/deep"
-        android:paddingBottom="32dp"
-        android:layout_below="@id/welcome"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Name"
-        android:id="@+id/textView3"
-        android:layout_below="@id/deep"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Password"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/editText6"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editText7"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentStart="true" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/editText7"
-        android:layout_alignParentStart="true">
-
-        <Button
-            android:layout_width="0dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Login"
-            android:id="@+id/button_login"
-            android:layout_marginRight="4dp"
-            android:background="@color/colorAccent"
-            android:textColor="@color/cardview_light_background" />
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center">
 
-        <Button
-            android:layout_width="0dp"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name"
+                android:id="@+id/textView3"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/userName"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Password"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/userName"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/password"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Login"
+                    android:id="@+id/button_login"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/cardview_light_background" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Register"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/cardview_light_background"
+                    android:id="@+id/button_register" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Register"
-            android:layout_marginLeft="4dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/cardview_light_background"
-            android:id="@+id/button_register" />
-    </LinearLayout>
+            android:layout_gravity="center_horizontal|top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome To"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:textSize="25sp"
+                android:paddingTop="40dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/welcome"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deep Enterprise"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:textSize="40sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/deep"
+                android:paddingBottom="32dp"
+                android:layout_below="@id/welcome"/>
+        </RelativeLayout>
+
+    </FrameLayout>
 
 </RelativeLayout>

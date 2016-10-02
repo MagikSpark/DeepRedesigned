@@ -32,8 +32,8 @@ public class ClientDbHelper extends SQLiteOpenHelper {
                         + ClientEntry.COLUMN_CLIENT_GENDER + " INTEGER NOT NULL DEFAULT 0, "
                         + ClientEntry.COLUMN_CLIENT_ADDRESS + " TEXT, "
                         + ClientEntry.COLUMN_CLIENT_SOCIETY + " TEXT, "
-                        + ClientEntry.COLUMN_CLIENT_PHONE + " TEXT, "
-                        + ClientEntry.COLUMN_CLIENT_EMAIL + "TEXT "
+                        + ClientEntry.COLUMN_CLIENT_PHONE + " TEXT "
+                        //+ ClientEntry.COLUMN_CLIENT_EMAIL + "TEXT "
                 + ");";
 
         db.execSQL(SQL_CREATE_CLIENTS_TABLE);

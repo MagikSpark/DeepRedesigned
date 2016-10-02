@@ -14,4 +14,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_add_client">Add Client</string>
+
+
+    <!-- Gender Name -->
+    <string name="gender_unknown">Unknown</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <string-array name="array_gender_options">
+        <item>@string/gender_unknown</item>
+        <item>@string/gender_male</item>
+        <item>@string/gender_female</item>
+    </string-array>
 </resources>

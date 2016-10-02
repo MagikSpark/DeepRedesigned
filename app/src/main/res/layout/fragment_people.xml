@@ -1,467 +1,55 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="in.magikspark.deep.People"
-    android:accessibilityLiveRegion="polite">
+    tools:context=".People">
 
-    <ScrollView
+    <ListView
+        android:id="@+id/List"
         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView" >
+        android:layout_centerInParent="true">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/empty_shelter_image"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|top">
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_empty"/>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                android:id="@+id/ref001"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                app:cardElevation="4dp" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="#001"
-                            android:textSize="10sp"
-                            android:paddingTop="14dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Priyanka Patel"
-                            android:textSize="24sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Vaikunth Society"
-                            android:textSize="14sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingBottom="16dp"
-                            />
-                    </LinearLayout>
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:text="Paid"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                android:id="@+id/ref002"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                app:cardElevation="4dp" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="#002"
-                            android:textSize="10sp"
-                            android:paddingTop="14dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mukund Gohil"
-                            android:textSize="24sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="SuryaNarayan Society"
-                            android:textSize="14sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingBottom="16dp"
-                            />
-                    </LinearLayout>
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimaryDark"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:text="Unpaid"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/empty_title_text"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="5dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            app:cardElevation="4dp" >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="#002"
-                        android:textSize="10sp"
-                        android:paddingTop="14dp"
-                        android:paddingLeft="16dp"
-                        android:paddingRight="16dp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Mukund Gohil"
-                        android:textSize="24sp"
-                        android:paddingLeft="16dp"
-                        android:paddingRight="16dp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="SuryaNarayan Society"
-                        android:textSize="14sp"
-                        android:paddingLeft="16dp"
-                        android:paddingRight="16dp"
-                        android:paddingBottom="16dp"
-                        />
-                </LinearLayout>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorPrimaryDark"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp"
-                    android:gravity="center"
-                    android:text="Unpaid"/>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+            android:layout_below="@+id/empty_shelter_image"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="It\'s a bit lonely here..."
+            android:textAppearance="?android:textAppearanceMedium"/>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                app:cardElevation="4dp" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="#002"
-                            android:textSize="10sp"
-                            android:paddingTop="14dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mukund Gohil"
-                            android:textSize="24sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="SuryaNarayan Society"
-                            android:textSize="14sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingBottom="16dp"
-                            />
-                    </LinearLayout>
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimaryDark"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:text="Unpaid"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                app:cardElevation="4dp" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="#002"
-                            android:textSize="10sp"
-                            android:paddingTop="14dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mukund Gohil"
-                            android:textSize="24sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="SuryaNarayan Society"
-                            android:textSize="14sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingBottom="16dp"
-                            />
-                    </LinearLayout>
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimaryDark"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:text="Unpaid"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                app:cardElevation="4dp" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="#002"
-                            android:textSize="10sp"
-                            android:paddingTop="14dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mukund Gohil"
-                            android:textSize="24sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="SuryaNarayan Society"
-                            android:textSize="14sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingBottom="16dp"
-                            />
-                    </LinearLayout>
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimaryDark"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:text="Unpaid"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                app:cardElevation="4dp" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="#002"
-                            android:textSize="10sp"
-                            android:paddingTop="14dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mukund Gohil"
-                            android:textSize="24sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="SuryaNarayan Society"
-                            android:textSize="14sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingBottom="16dp"
-                            />
-                    </LinearLayout>
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimaryDark"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:text="Unpaid"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                app:cardElevation="4dp" >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="#002"
-                            android:textSize="10sp"
-                            android:paddingTop="14dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mukund Gohil"
-                            android:textSize="24sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="SuryaNarayan Society"
-                            android:textSize="14sp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingBottom="16dp"
-                            />
-                    </LinearLayout>
-                    <TextView
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimaryDark"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:text="Unpaid"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_title_text"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="Please Come Next Time"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0"/>
+    </RelativeLayout>
 
 
 
-        </LinearLayout>
-    </ScrollView>
-
-</FrameLayout>
+    </RelativeLayout>
